@@ -1,17 +1,26 @@
-Usage
 
-Basic Scan:
+```markdown
+# Bounty-Script
+
+## Usage
+
+### Basic Scan:
+```bash
 ./recon.sh example.com
-_______________________________________________________________________________________________________________________________________________________________________________________________
+```
 
-With Notifications:
+### With Notifications:
+```bash
 SLACK_WEBHOOK="https://hooks.slack.com/services/..." ./recon.sh example.com
-_______________________________________________________________________________________________________________________________________________________________________________________________
+```
 
-CI/CD Mode :
+### CI/CD Mode:
+```bash
 CI_MODE=true AWS_ACCESS_KEY_ID=... AWS_SECRET_ACCESS_KEY=... ./recon.sh target.com
-_______________________________________________________________________________________________________________________________________________________________________________________________
+```
 
-Custom Blind XSS :
-
+### Custom Blind XSS:
+```bash
 BLIND_XSS="https://your.interact.sh" ./recon.sh example.org
+```
+```
